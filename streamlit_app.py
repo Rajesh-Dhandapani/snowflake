@@ -36,7 +36,7 @@ if ingredients_options:
 
     st.write(my_insert_stmt)
 
-    submit_order = streamlit.button('Submit Order')
+    submit_order = st.button('Submit Order')
     
     if submit_order:
         session.sql(my_insert_stmt).collect()
